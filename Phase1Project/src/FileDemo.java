@@ -87,7 +87,7 @@ public class FileDemo {
 			add();
 			break;
 		case 2:
-
+			delete();
 			break;
 		case 3:
 
@@ -100,26 +100,46 @@ public class FileDemo {
 	}
 
 	public static void add() {
-		System.out.println("Please enter file name");
+		System.out.println("\nPlease enter file name");
 		Scanner x = new Scanner(System.in);
 		String input = x.next();
 		File file = new File(curDir+"/"+input+".txt");
 		try {
 			file.createNewFile();
 			System.out.println("file succesfully created");
-			
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		/*
-		 *  once it adds go back to main menu
-		 *  call welcome,selector and mainmenu
-		 */
+		System.out.println("\nSelect one of the following "	
+				+ "\n1. List all available files"
+				+ "\n2. Add, Delete or Search"
+				+ "\n3. Close program");
+		selector();
+		mainMenu(optionSelected);
 	}
 
 	public static void delete() {
-
+		System.out.println("\nPlease enter file name to delete");
+		Scanner x = new Scanner(System.in);
+		String input = x.next();
+		File files[] = folder.listFiles();
+		for(File dFile : files) {
+			if(!dFile.isDirectory()&&dFile.getName().charAt(0)!='.') {
+				if((input+".txt").equals(dFile.getName())) {
+					if(dFile.delete()){
+						System.out.println("Delete done");
+					}
+				}
+			}
+		}
+		System.out.println("\nSelect one of the following "	
+				+ "\n1. List all available files"
+				+ "\n2. Add, Delete or Search"
+				+ "\n3. Close program");
+		selector();
+		mainMenu(optionSelected);
 	}
 
 	public static void search() {

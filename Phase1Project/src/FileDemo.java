@@ -90,7 +90,8 @@ public class FileDemo {
 			delete();
 			break;
 		case 3:
-
+			search();
+			break;
 		}
 	}
 
@@ -112,6 +113,11 @@ public class FileDemo {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		System.out.println("\nSelect one of the following "	
 				+ "\n1. List all available files"
 				+ "\n2. Add, Delete or Search"
@@ -131,8 +137,15 @@ public class FileDemo {
 					if(dFile.delete()){
 						System.out.println("Delete done");
 					}
+				}else {
+					System.out.println("fILE NOT FOUND");
 				}
 			}
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
 		}
 		System.out.println("\nSelect one of the following "	
 				+ "\n1. List all available files"
@@ -143,6 +156,29 @@ public class FileDemo {
 	}
 
 	public static void search() {
-
+		System.out.println("\nPlease enter file name you wish to search for");
+		Scanner x = new Scanner(System.in);
+		String input = x.next();
+		File files[] = folder.listFiles();
+		for(File dFile : files) {
+			if(!dFile.isDirectory()&&dFile.getName().charAt(0)!='.') {
+				if((input+".txt").equals(dFile.getName())) {
+					System.out.println("File: "+input+" matches "+dFile.getName());
+				}else {
+					System.out.println("File: "+input+" DOES NOT MATCH "+dFile.getName());
+				}
+			}
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		System.out.println("\nSelect one of the following "	
+				+ "\n1. List all available files"
+				+ "\n2. Add, Delete or Search"
+				+ "\n3. Close program");
+		selector();
+		mainMenu(optionSelected);
 	}
 }

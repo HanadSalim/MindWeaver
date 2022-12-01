@@ -1,0 +1,108 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "userName": "admin",
+      "passWord": "Admin321"
+    }
+  ],
+  "shoes": [
+    {
+      "id": 1,
+      "Title": "",
+      "passWord": "Admin321"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Joseph Jast",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/506.jpg",
+      "gender": "Male",
+      "phoneNumber": "1-250-608-5101 x300",
+      "zipCode": "78902",
+      "birthDate": "2021-12-14T17:40:56.713Z"
+    },
+    {
+      "id": 2,
+      "username": "Virgil Bogisich",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/909.jpg",
+      "gender": "Male",
+      "phoneNumber": "944-866-3825",
+      "zipCode": "14508-5051",
+      "birthDate": "2022-01-29T06:47:52.715Z"
+    },
+    {
+      "id": 3,
+      "username": "Miss Louise Torp",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/775.jpg",
+      "gender": "Male",
+      "phoneNumber": "232-672-8146 x51943",
+      "zipCode": "97942",
+      "birthDate": "2022-06-27T14:01:19.355Z"
+    },
+    {
+      "id": 4,
+      "username": "Celia Hayes",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/151.jpg",
+      "gender": "Female",
+      "phoneNumber": "1-555-881-0184",
+      "zipCode": "90681",
+      "birthDate": "2021-12-04T13:56:29.239Z"
+    },
+    {
+      "id": 5,
+      "username": "Lindsey Baumbach",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1132.jpg",
+      "gender": "Female",
+      "phoneNumber": "517-262-0385 x1854",
+      "zipCode": "87793-4473",
+      "birthDate": "2021-12-10T14:55:19.438Z"
+    },
+    {
+      "id": 6,
+      "username": "Ben Witting",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/313.jpg",
+      "gender": "Male",
+      "phoneNumber": "865.758.4521",
+      "zipCode": "10251-0552",
+      "birthDate": "2022-05-02T17:37:14.049Z"
+    },
+    {
+      "id": 7,
+      "username": "Jessica Bernier",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1210.jpg",
+      "gender": "Female",
+      "phoneNumber": "359.272.7253",
+      "zipCode": "13363-6553",
+      "birthDate": "2022-10-31T06:20:16.518Z"
+    },
+    {
+      "id": 8,
+      "username": "Barbara Kuphal",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/710.jpg",
+      "gender": "Female",
+      "phoneNumber": "954-716-8716",
+      "zipCode": "03171-5381",
+      "birthDate": "2022-09-29T16:15:58.120Z"
+    },
+    {
+      "id": 9,
+      "username": "Stuart Padberg I",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/168.jpg",
+      "gender": "Male",
+      "phoneNumber": "1-250-557-6294 x89283",
+      "zipCode": "21703",
+      "birthDate": "2021-12-31T18:23:39.740Z"
+    },
+    {
+      "id": 10,
+      "username": "Kayla Stiedemann DVM",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/263.jpg",
+      "gender": "Female",
+      "phoneNumber": "369-436-8806",
+      "zipCode": "50338",
+      "birthDate": "2022-02-08T16:07:24.237Z"
+    }
+  ]
+}

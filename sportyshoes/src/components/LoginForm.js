@@ -5,7 +5,13 @@ import AdminContext from '../contexts/adminContext';
 
 
 function LoginForm() {
-    const {admin,update} = useContext(AdminContext)
+
+
+    useEffect(() => {
+        fetchAdminData();
+      },[])
+
+    const {admin, fetchAdminData} = useContext(AdminContext)
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
       let path = `page3`; 

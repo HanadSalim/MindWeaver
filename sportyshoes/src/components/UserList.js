@@ -1,14 +1,30 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
+import { useEffect } from 'react';
 import AdminContext from '../contexts/adminContext'
 
 function UserList({input}) {
+  const {user, click, fetchUserData} = useContext(AdminContext)
+  useEffect(() => {
+    if(user.length==0){
+      fetchUserData();
+    }
+    
+  },[])
 
-  const {user, click, clicked, clear} = useContext(AdminContext)
+  
 
   return (
     <>
       {click?<ol >{user.map((x)=>{
-        if(input.toLowerCase()===x.username.toLowerCase()||input.toLowerCase()===x.gender.toLowerCase()){return(
+        if(input==null){return(
+          <li key={x.id}>
+            <p>User: {x.username}</p>
+            <p>Gender: {x.gender}</p>
+            <p>PhoneNum: {x.phoneNumber}</p>
+            <p>ZipCode: {x.zipCode}</p>
+          </li>
+        )}
+        else if(input.toLowerCase()===x.username.toLowerCase()||input.toLowerCase()===x.gender.toLowerCase()){return(
           <li key={x.id}>
             <p>User: {x.username}</p>
             <p>Gender: {x.gender}</p>

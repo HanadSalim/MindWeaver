@@ -2,6 +2,7 @@ import React, { useContext} from 'react'
 import styled from 'styled-components'
 import AdminContext from '../contexts/adminContext'
 import ChangePass from './ChangePass'
+import ProductTable from './ProductTable'
 import SearchUsers from './SearchUsers'
 
 function Options() {
@@ -25,7 +26,7 @@ function Options() {
           option===1&&<ChangePass/>
         }
         {
-          option===2&&<p>will be implemented soon</p>
+          option===2&&<ProductTable/>
         }
         {
           option===3&&<SearchUsers/>

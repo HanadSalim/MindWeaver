@@ -6,11 +6,9 @@ export const AdminProvider = ({ children }) => {
   const [option, setOption] = useState(0)
   const [admin, setAdmin] = useState([])
   const [user, setUsers] = useState([])
+  const [products, setProduct] = useState([])
   const [click, setClick] = useState(false)
-  useEffect(() => {
-    fetchAdminData();
-    fetchUserData();
-  },[])
+
 
   const clicked = () =>{
     setClick(true)
@@ -22,7 +20,9 @@ export const AdminProvider = ({ children }) => {
     const fetchAdminData = async () => {
       const response = await fetch("http://localhost:8000/admin")
       const data = await response.json()
-      setAdmin(data[0])
+      data.map((a)=>{
+        setAdmin(a)
+      })
     }
     const fetchUserData = async () => {
       const response = await fetch("http://localhost:8000/users")
@@ -31,6 +31,15 @@ export const AdminProvider = ({ children }) => {
         setUsers(user => [...user, x])
       })
       
+    }
+
+    const fetchProducts = async () => {
+      const response = await fetch("http://localhost:8000/shoes")
+      const data = await response.json()
+      data.map((p)=>{
+        setProduct(products => [...products, p])
+        console.log(p)
+      })
     }
 
     const up = async (password) =>{
@@ -50,7 +59,7 @@ export const AdminProvider = ({ children }) => {
     }
     
     return <AdminContext.Provider 
-    value={{admin, user, up, option, selectOption, click, clicked,clear}}
+    value={{admin, user, up, option, selectOption, click, clicked,clear, products, fetchProducts, fetchAdminData, fetchUserData}}
     >
       {children}
       </AdminContext.Provider>

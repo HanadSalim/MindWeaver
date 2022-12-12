@@ -39,7 +39,7 @@ function LoginForm() {
             <div>
                 <h1>Sign in:</h1>
             </div>
-            <div clasName="container">
+            <div>
                 <label ><b>Username</b></label>
                 <input id="lu" type="text" placeholder="Enter username" name="uname" required /><br/>
                 <label ><b>Password </b></label>

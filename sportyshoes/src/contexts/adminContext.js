@@ -38,7 +38,6 @@ export const AdminProvider = ({ children }) => {
       const data = await response.json()
       data.map((p)=>{
         setProduct(products => [...products, p])
-        console.log(p)
       })
     }
 

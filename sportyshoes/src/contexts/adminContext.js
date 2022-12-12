@@ -3,12 +3,12 @@ import React, {createContext, useEffect, useState } from "react";
 
 export const  AdminContext = createContext()
 export const AdminProvider = ({ children }) => {
+
   const [option, setOption] = useState(0)
   const [admin, setAdmin] = useState([])
   const [user, setUsers] = useState([])
   const [products, setProduct] = useState([])
   const [click, setClick] = useState(false)
-
 
   const clicked = () =>{
     setClick(true)

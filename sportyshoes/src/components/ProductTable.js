@@ -30,7 +30,7 @@ function ProductTable() {
           return(
           <tr key={x.id}>
             <td>{x.id}</td>
-            <td><img src={x.imageURL}/></td>
+            <td><img src={x.imageURL} alt="Error 404"/></td>
             <td>{x.name}</td>
             <td>{x.gender}</td>
             <td>{x.category}</td>
@@ -38,7 +38,6 @@ function ProductTable() {
             <td>{x.items_left}</td>
           </tr>
           )
-     
         })}
         </tbody>
 
